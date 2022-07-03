@@ -1,0 +1,471 @@
+/* Estilos generales*/
+
+/* Celular  y tablet */
+
+@media screen{
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,400&display=swap');
+
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    /* background-image:url(../img/paw.png);  */
+    background-color: rgba(247, 247, 247,0.9);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    row-gap: 0px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer"
+    ;
+}
+
+#barraSuperior {
+    font-size: 1.6rem;
+}
+    #barraSuperior img{
+        width: 20px;
+    }
+
+.text-center{
+    text-align: center;
+}
+
+.bg-white{
+    background-color: white;
+}
+.bg-gris{
+    background-color: rgb(247, 247, 247);
+}
+
+.bg-gris-a{
+    background-color: rgba(247, 247, 247,0.8);
+}
+
+.bg-amarillo{
+    background-color: rgb( 245, 214, 0);
+}
+
+/* Navigation bootstrap */
+#botonera img{
+	height: 10vh;
+}
+
+#botonera ul li{
+    list-style: none;
+    font-family:  'Roboto Condensed', sans-serif;;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 4px;
+    text-align: center;
+}
+
+#botonera ul li a{
+    color: rgb( 13, 13, 13);
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: underline 0s;
+}
+
+    #botonera ul li a:hover{
+        text-decoration: underline;
+        font-size: 2.1rem;
+    } 
+
+/* Ends navigation bootstrap */
+
+/* Homemade Nav */
+nav {
+    grid-area: nav;
+    width:auto; 
+}
+    nav ul{
+    display: flex;
+    justify-content: center; 
+    flex-direction: column;
+    }
+        nav ul li{
+            list-style: none;
+            font-family: 'Roboto Condensed', sans-serif;;
+            font-size: 2rem;
+            padding: 4px;
+            text-align: center;
+        }
+            nav ul li a{
+                color: rgb( 13, 13, 13);
+                text-decoration: none;
+                font-size: 2.2rem;
+                transition: underline 0s;
+            }
+
+            nav ul li a:hover{
+                text-decoration: underline;
+                font-size: 2.3rem;
+            }
+/* Ends homemade Nav */
+
+.padding-principal{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+.bloque{
+    margin:10%; 
+    background-color: rgba(247, 247, 247,0.9);
+}
+
+    .bloque p{
+        font-family: 'Roboto Condensed', sans-serif;
+        text-align: center;
+        font-size: 2.1rem;
+        font-weight: 700;
+    }  
+
+footer{
+    grid-area:footer;
+    display: flex;
+    justify-content: space-evenly;
+}
+    footer a{
+        font-family: 'Roboto Condensed', sans-serif;;
+        font-size: 2rem;
+        text-decoration: none;
+        padding: 3px;
+    }
+
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3rem;
+}
+h3{ 
+    font-size: 2.5rem;
+}
+h1,h2,h3{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    text-transform: capitalize; 
+}
+
+section p{
+    color:rgb( 13, 13, 13);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2rem; /*equivalente a 20px con root en 62.5%*/
+    line-height: 2.5rem; /*alto del renglon*/
+    /* font-style: italic; */
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.alineacion-left h2{
+    text-align: left;
+}
+
+.alineacion-left p{
+    text-align: left;
+}
+table{
+    display: flex;
+    justify-content: center;
+    border: none;
+    /*border-style: dashed; */
+}
+    table tr {
+        color:rgb( 13, 13, 13);
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 2rem; /*equivalente a 20px con root en 62.5%*/
+        line-height: 2.5rem; /*alto del renglon*/
+        /* font-style: italic; */
+        font-weight: 400;
+    }
+
+form{
+    color:rgb( 13, 13, 13);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.8rem; /*equivalente a 20px con root en 62.5%*/
+    line-height: 2.5rem; /*alto del renglon*/
+    /* font-style: italic; */
+    font-weight: 400;
+}
+
+.textLigth{
+    font-weight: 300;
+}
+
+.textRegular{
+    font-weight: 400;
+}
+
+.textBold{
+    font-weight: 500;
+}
+
+.textCenter{
+    text-align: center;
+    }
+
+
+.nav_image--size{
+    width: 100%;
+    height: auto;
+    padding: auto;
+    border: 2px solid black;
+}
+
+/* configuracion de la pantalla index */
+
+.main_titulo--center{
+    text-align: center;
+}
+
+.flexStyle{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction:column;
+    width: auto;
+}
+
+.flexCenter{ 
+	align-items: center;
+}
+.main_texto--justify{
+    text-align:justify;
+    border: 3px;
+    margin-top: 20px;
+}
+
+.main_imagen--size{
+    width: auto;
+    height: 50vh;
+    margin: 0px;
+    padding: 20px;
+    border: 3px;
+    overflow: hidden;
+}
+
+/* contactenos */
+.contactenos_form--grow{
+    /* border: 2px solid black; */
+    justify-content: center;
+    width: 80%;
+    padding: 30px 10px;
+}
+
+.contactenos_map--grow{
+    width: 80%;
+    height: 100vh;
+    /* border: 2px solid black; */
+    justify-content: center;
+    padding: 30px  10px;
+}
+
+/* Productos */
+
+.breadcrumb{
+    background-color: white;
+    font-size: 2.5rem;
+    font-weight: 300;
+    }
+
+#productos .galeria{
+	margin: 20px;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    transition: border 0.5s;
+}
+	#productos .galeria figure{
+    width: auto;
+    text-align: center;
+    border: grey solid 1px;
+	} 
+        
+        #productos .galeria figure:hover{
+            border: 5px solid #555;
+        }
+
+		#productos .galeria figure img{
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+            width:100%;
+            height: 50vh;
+		}
+
+		#productos .galeria figure figcaption{
+			font-size: 2.5rem;
+			padding: 10px 0;
+		}
+
+		#productos .galeria .price{
+			padding-bottom: 10px;
+            font-size: 2rem;
+		}
+
+/* peluqueria */
+
+    .gridpelu{
+        padding: 20px;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: 1fr;  
+        align-content: stretch;
+        grid-template-areas: 
+        "corteybaño"
+        "corteybañopic"
+        "baño"
+        "bañopic"
+        "corte"
+        "cortepic"
+        "uñas"
+        "uñaspic";
+    }
+
+    .corteybaño {
+        grid-area: corteybaño;
+        justify-self: stretch;
+        align-self: stretch;
+        background:linear-gradient(to right,rgb( 245, 214, 0), rgb(247, 247, 247))  ; 
+        margin-top: 10vh;
+    }
+
+    .corteybañopic{
+        grid-area: corteybañopic;
+        width:70%;
+        height: auto;
+        justify-self: stretch;
+        align-self: stretch;
+        margin-top: 10vh;
+
+    } 
+
+    .baño{
+        grid-area: baño;
+        justify-self: stretch;
+        align-self:stretch;
+        background:linear-gradient(to left,rgb( 245, 214, 0), rgb(247, 247, 247))  ; 
+        margin-top: 10vh;
+    }
+
+    .bañopic{
+        grid-area: bañopic;
+        width:70%;
+        height: auto;
+        justify-self: self-end;
+        align-self: stretch;
+        margin-top: 10vh;
+
+    }
+
+    .corte{
+        grid-area: corte;
+        justify-self: stretch;
+        align-self: stretch;  
+        background:linear-gradient(to right,rgb( 245, 214, 0), rgb(247, 247, 247))  ; 
+        margin-top: 10vh;
+    }
+
+    .cortepic{
+        grid-area: cortepic;
+        width:70%;
+        height: auto;
+        justify-self: stretch;
+        align-self: stretch;
+        margin-top: 10vh;
+    }
+
+    .uñas{
+        grid-area: uñas;
+        border-color: black;
+        justify-self: stretch;
+        align-self: stretch;
+        background:linear-gradient(to left,rgb( 245, 214, 0), rgb(247, 247, 247))  ; 
+        margin-top: 10vh;
+    }
+
+    .uñaspic{
+        grid-area: uñaspic;
+        width:70%;
+        height: auto;
+        justify-self: self-end;
+        align-self: stretch;
+        margin-top: 10vh;
+    }
+
+}
+
+/* Resolucion 480 */
+@media screen and (min-width:480px){
+
+    /* Pagina productos */
+    #productos .galeria{
+        flex-direction: row;
+    }
+        #productos .galeria figure{
+        width: 46%;
+        } 
+
+}
+
+
+/* Resolucion 768 */
+@media screen and (min-width:768px){
+
+    nav ul{
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    .flexStyle{
+        justify-content: center;
+        flex-direction: row;
+    }
+
+/* Pagina productos */
+    #productos .galeria{
+        flex-direction: row;
+    }
+        #productos .galeria figure{
+        width: 23%;
+        } 
+
+/* peluqueria
+ */
+.gridpelu{
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,1fr);  
+    /* grid-column-gap: 10px;
+    grid-row-gap: 10px; */
+    justify-items:center;
+    align-items: center;
+    grid-template-areas: 
+    "corteybaño corteybaño corteybañopic"
+    "bañopic baño baño"
+    "corte corte cortepic"
+    "uñaspic uñas uñas";
+}
+
+}
